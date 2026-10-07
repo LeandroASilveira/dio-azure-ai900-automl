@@ -1,0 +1,29 @@
+{
+  "mensagem_do_desenvolvedor": "O modelo de AutoML foi treinado com sucesso (R2 Score de ~0.70). Devido a restrições rígidas de cota de vCPU e memória (Standard_DS1_v2 insuficiente) na assinatura de testes do Azure, a implantação do ponto de extremidade em tempo real foi simulada.",
+  "configuracao_esperada": {
+    "nome_do_servico": "predict-rentals",
+    "tipo_computacao": "Azure Container Instance (ACI) / Managed Endpoint",
+    "modelo_vinculado": "mslearbikeautom2:1",
+    "dados_de_entrada_esperados": {
+      "Inputs": {
+        "data": [
+          {
+            "day": 1,
+            "mnth": 1,
+            "year": 2022,
+            "season": 2,
+            "holiday": 0,
+            "weekday": 1,
+            "workingday": 1,
+            "weathersit": 2,
+            "temp": 0.34,
+            "atemp": 0.36,
+            "hum": 0.80,
+            "windspeed": 0.18
+          }
+        ]
+      },
+      "GlobalParameters": 1.0
+    }
+  }
+}
